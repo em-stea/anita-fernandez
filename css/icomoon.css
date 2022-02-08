@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?6mi3k');
-  src:  url('fonts/icomoon.eot?6mi3k#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?6mi3k') format('truetype'),
-    url('fonts/icomoon.woff?6mi3k') format('woff'),
-    url('fonts/icomoon.svg?6mi3k#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?cxvjhg');
+  src:  url('fonts/icomoon.eot?cxvjhg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cxvjhg') format('truetype'),
+    url('fonts/icomoon.woff?cxvjhg') format('woff'),
+    url('fonts/icomoon.svg?cxvjhg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-camera:before {
+  content: "\e902";
+}
 .icon-keyboard_arrow_right:before {
   content: "\e900";
 }
 .icon-keyboard_arrow_down:before {
   content: "\e901";
+}
+.icon-microphone:before {
+  content: "\e903";
 }
 .icon-facebook:before {
   content: "\ea90";

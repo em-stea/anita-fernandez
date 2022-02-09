@@ -37,6 +37,7 @@
 </head>
 <body>
   <header>
+    <!--
     <nav class="navbar navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -47,9 +48,6 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <!--
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            -->
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -74,21 +72,79 @@
         </div>
       </div>
     </nav>
+  -->
+  <div class="container-fluid px-0">
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo-anita.png" alt="logo anita fernandez" class="d-inline-block align-text-top logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trabaja-conmigo">Trabaja conmigo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#emprendimientos">Emprendimientos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mi-contenido">Mi Contenido</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
   </header>
 
-  <section class="container-fluid bg-image-home d-flex flex-column px-0 mt-5">
-    <div class="container-text-home">
-      <h1>Anita
-      <br>Fernández
-      </h1>
-      <h2>Business Trainer & Deal Maker</h2>
+  <section class="container-fluid px-0">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"  data-bs-interval="20000">
+          <img src="img/img-home.jpg" class="d-block w-100" alt="...">
+          <div class="container-text-home d-none d-md-block">
+            <h1>Anita
+              <br>Fernández
+              </h1>
+              <p><span class="typed"></span></p>
+          </div>
+        </div><!--
+        <div class="carousel-item"  data-bs-interval="1800">
+          <img src="img/img-home-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item"  data-bs-interval="1800">
+          <img src="img/img-home-3.jpg" class="d-block w-100" alt="...">
+        </div>-->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <img src="img/img-home.jpg" class="img-fluid img-home" alt="...">
   </section>
 
   <!--Sobre mi-->
   <div class="container-fluid bg-light bg-sobre-mi" id="sobre-mi">
     <div class="row">
+      <div class="container-text-home-mobile d-block d-md-none">
+        <h1>Anita
+          <br>Fernández
+          </h1>
+          <p>
+            <span class="typed">Business Trainer and Deal Maker</span>
+          </p>
+      </div>
       <div class="col-12 col-md-6 img-01" data-aos="fade-right" data-aos-duration="1500">
       </div>
       <div class="col-12 col-md-6 box-text-home">
@@ -180,8 +236,9 @@
             <div class="mb-3">
               <input type="email" class="form-control" id="email" name="email"  placeholder="Email" required>
             </div>
-          </div>
-          <button type="submit" class="text-center btn-send">¡Suscríbete!</button>
+          </div><!--
+          <button type="submit" class="text-center btn-send">¡Suscríbete!</button>-->
+          <input type="submit" class="text-center btn-send" name="enviar">
         </form>  
       </div>
     </div>
@@ -197,7 +254,7 @@
           Rompe tus límites
           </p>
           <div>
-            <a href="">Contáctame</a>
+            <a href="https://api.whatsapp.com/send?phone=593983847124&text=Hola,%20quiero%20mas%20informaci%C3%B3n%20acerca%20de%20los%20programas.">Contáctame</a>
           </div>
         </div>
       </div>
@@ -214,7 +271,7 @@
           Liderando desde el corazón.
           </p>
           <div>
-            <a href="">Contáctame</a>
+            <a href="https://api.whatsapp.com/send?phone=593983847124&text=Hola,%20%C2%A1quiero%20participar%20del%20Workshop!">Contáctame</a>
           </div>
         </div>
       </div>
@@ -231,7 +288,7 @@
           Update de tu negocio.
           </p>
           <div>
-            <a href="">Contáctame</a>
+            <a href="https://api.whatsapp.com/send?phone=593983847124&text=Hola,%20quiero%20mas%20informaci%C3%B3n%20acerca%20de%20los%20programas%20de%20capacitaci%C3%B3n.">Contáctame</a>
           </div>
         </div>
       </div>
@@ -280,7 +337,7 @@
 
   <div class="container-fluid contenedor-tarjetas-padre">
     <div class="row contenedor-tarjetas">
-      <div class="col-12 col-md-3"  data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-12 col-md-2"  data-aos="fade-up" data-aos-duration="1000">
         <div class="tarjeta tarjeta-1">
           <div class="tarjeta-cuerpo">
             <div class="tarjeta-encabezado">
@@ -292,7 +349,7 @@
               </div>
             </div>
             <div class="tarjeta-contenido">
-              <p class="agrandar">Fomentamos el empoderamiento de la mujer, las alentamos a capacitarse y a la vez lograr independencia económica. Brindamos capacitaciones y herramientas y realizamos acciones de beneficencia.</p>
+              <p class="agrandar">Fomentamos el empoderamiento de la mujer, las alentamos a capacitarse y a la vez lograr independencia económica. Brindamos capacitaciones y realizamos acciones de beneficencia.</p>
               <a href="" class="icon-world" target="_blank">
                 <p>Visita la web</p>
               </a>
@@ -301,7 +358,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+      <div class="col-12 col-md-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <div class="tarjeta tarjeta-2">
           <div class="tarjeta-cuerpo">
             <div class="tarjeta-encabezado">
@@ -313,7 +370,7 @@
               </div>
             </div>
             <div class="tarjeta-contenido">
-              <p class="agrandar">Es un proyecto impulsado por la Fundación Mujeres sin Límites en el que se reúnen mujeres líderes de todo el mundo para que, mediante sus grandes experiencias de vida y de lucha, nos inspiren y capaciten.</p>
+              <p class="agrandar">Proyecto impulsado por la Fundación Mujeres sin Límites en el que se reúnen mujeres líderes de todo el mundo para que, mediante sus grandes experiencias de vida y de lucha, nos inspiren y capaciten.</p>
               <a href="https://cumbremundialmujeres.com/" class="icon-world" target="_blank">
                 <p>Visita la web</p>
               </a>
@@ -322,7 +379,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+      <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
         <div class="tarjeta tarjeta-3">
           <div class="tarjeta-cuerpo">
             <div class="tarjeta-encabezado">
@@ -343,7 +400,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+      <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
         <div class="tarjeta tarjeta-4">
           <div class="tarjeta-cuerpo">
             <div class="tarjeta-encabezado">
@@ -357,6 +414,27 @@
             <div class="tarjeta-contenido">
               <p class="agrandar">Ofrecemos frutas secas en gran variedad de primera calidad. Hacemos ventas minoristas y mayoristas. ¡No dudes en consultar nuestro catálogo!</p>
               <a href="http://pacobananasa.com/" class="icon-world" target="_blank">
+                <p>Visita la web</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+        <div class="tarjeta tarjeta-5">
+          <div class="tarjeta-cuerpo">
+            <div class="tarjeta-encabezado">
+              <img src="img/logo-05.png" alt="">
+              <p>Vanegas Consultores</p>
+              <h1>Estudio Jurídico</h1>
+              <div class="tarjeta-acciones d-block d-md-none">
+                <button class="botones boton-5">Ver más</button>
+              </div>
+            </div>
+            <div class="tarjeta-contenido">
+              <p class="agrandar">Firma de profesionales del derecho, de tradición familiar, cuya sede principal es en la ciudad de Guayaquil, pero que presta servicios en todo el territorio nacional.</p>
+              <a href="https://www.vanegasdefensores.com/" class="icon-world" target="_blank">
                 <p>Visita la web</p>
               </a>
             </div>
@@ -377,7 +455,7 @@
       <div class="col-12 col-md-6">
         <div class="box-contenido-elements box-1">
           <h2>Podcast</h2>
-          <a href="" data-aos="zoom-in" data-aos-duration="900">
+          <a href="proximamente.html" data-aos="zoom-in" data-aos-duration="900">
             <span class="icon-microphone"></span>
           </a>
         </div>
@@ -394,8 +472,8 @@
   </div>
 
   <!--Mis Redes-->
-  <div class="container-fluid box-contenido">
-    <div class="row bg-light">
+  <div class="container-fluid box-contenido-rrss">
+    <div class="row bg-dark-blue">
       <div class="col-12">
         <h1>Mis Redes</h1>
       </div>
@@ -472,6 +550,12 @@
 
   <!--Hover Responsive-->
   <script src="js/hover.js"></script>
+
+  <!--Typed Js Library--> <!--Efecto Escritura-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Typed JS-->
+  <script src="js/typed.js"></script>
 
 </body>
 </html>

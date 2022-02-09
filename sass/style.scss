@@ -35,7 +35,12 @@
 
 ///General///
 /***Colors***/
-
+.bg-pink {
+  background-color: $colour-pink;
+}
+.bg-dark-blue {
+  background-color: $colour-dark-blue;
+}
 /***Text***/
 
 * {
@@ -46,6 +51,7 @@
 body {
   font-size: 19px;
   font-family: "Forum", cursive;
+  overflow-x: hidden;
 }
 
 ///index.html///
@@ -56,8 +62,25 @@ body {
   padding: 0.5rem 1.5rem;
   box-shadow: 0px 1px 8px 4px rgba(0, 0, 0, 0.2);
 }
-.logo-nav {
+.navbar-nav {
+  align-items: end;
+  padding-right: 1rem;
+}
+.navbar-brand {
+  margin-right: 0;
+}
+.logo {
   width: 60%;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  &:hover {
+    color: $colour-dark-blue;
+  }
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
 }
 .navbar-dark .navbar-toggler {
   border: none;
@@ -65,29 +88,58 @@ body {
 .navbar-toggler:focus {
   box-shadow: none;
 }
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .show > .nav-link {
-  color: $colour-dark-blue;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: $colour-pink;
-}
+
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: $colour-blue;
-  text-decoration: underline;
+  color: white;
 }
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+/*
 .offcanvas-header {
   justify-content: end;
 }
 
-/*Image home*/
-.bg-image-home {
+.nav-link {
+  color: $colour-dark-blue !important;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  &:hover {
+    color: wihte !important;
+  }
+}*/
+.navbar ul li .nav-link {
   position: relative;
+}
+.navbar ul li .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+.navbar ul li .nav-link:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/*Image home*/
+.carousel-item {
+  transition: transform 2s ease, ease-in;
+}
+.carousel-inner {
+  height: 31rem;
 }
 .container-text-home {
   position: absolute;
-  top: 10rem;
+  top: 6rem;
   padding-left: 3rem;
 }
 .container-text-home h1 {
@@ -96,11 +148,9 @@ body {
   font-size: 5rem;
   color: $colour-dark-blue;
 }
-.container-text-home h2 {
-  font-family: "Hatton";
-  font-weight: 400;
+.typed {
   color: $colour-blue;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 /*Sobre mi*/
@@ -138,6 +188,7 @@ body {
 }
 .bg-sobre-mi {
   padding-bottom: 15rem;
+  padding-top: 2.5rem;
 }
 .img-02 {
   background-image: url(../img/img-02.jpg);
@@ -432,7 +483,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
 }
 .contenedor-tarjetas {
   width: auto;
@@ -445,7 +496,8 @@ body {
 
 .tarjeta {
   height: 380px;
-  width: 300px;
+  //width: 300px;
+  width: auto;
   overflow: hidden;
   margin: auto;
   padding: 10px 30px;
@@ -454,14 +506,14 @@ body {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   /*background: #f9f9f9;*/
-  background: linear-gradient(0deg, #f9f9f9, #f0f0f0);
+  background: linear-gradient(-135deg, #c850c0, #7685d3);
 }
 .tarjeta-encabezado img {
   position: relative;
   border-radius: 50%;
   display: block;
-  height: 170px;
-  width: 170px;
+  height: 160px;
+  width: 160px;
   border-top: 8px solid white;
   border-bottom: 8px solid white;
   object-fit: cover;
@@ -470,16 +522,17 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .tarjeta-encabezado p {
-  color: $colour-dark-blue;
+  color: white;
 }
 .tarjeta-encabezado h1 {
-  color: $colour-dark-blue;
+  color: white;
   font-family: "Hatton";
   font-size: 1.3rem;
 }
 .tarjeta-contenido .agrandar {
   font-size: 1rem;
   margin-top: 1rem;
+  color: white;
 }
 .botones {
   border-radius: 50px;
@@ -491,7 +544,10 @@ body {
     color: white;
   }
 }
-
+.col-md-2 {
+  min-width: 270px;
+  max-width: 300px;
+}
 .desplazar {
   opacity: 0;
   transition: all 0.5s ease;
@@ -511,14 +567,20 @@ body {
   opacity: 1;
 }
 .icon-world {
-  color: $colour-blue;
+  color: white;
   text-decoration: none;
   display: flex;
   justify-content: center;
+  &:hover {
+    color: white;
+  }
 }
 .icon-world p {
   font-family: "Forum", cursive;
   padding-left: 0.5rem;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /*Mi contenido*/
@@ -540,10 +602,11 @@ body {
   margin-top: 2rem;
 }
 .box-contenido span {
-  color: $colour-dark-blue;
+  color: white;
   font-size: 3rem;
   &:hover {
     color: white;
+    transform: scale(1.2);
   }
 }
 .box-contenido-elements {
@@ -562,7 +625,8 @@ body {
 }
 .box-contenido-elements a {
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #c850c0, #7685d3);
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -571,11 +635,19 @@ body {
   justify-content: center;
   align-items: center;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $colour-dark-blue;
   }
 }
 
 /*Mis Redes*/
+.box-contenido-rrss h1 {
+  font-family: "Hatton";
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 0;
+}
 .rrss {
   text-align: center;
   padding: 5rem;
@@ -587,11 +659,12 @@ body {
 .rrss span {
   color: white;
   font-size: 1.5rem;
-  background-color: $colour-blue;
+  background: linear-gradient(0deg, #d3a9ca, #e1cddd);
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   padding: 1rem;
   &:hover {
-    background-color: $colour-dark-blue;
+    background: linear-gradient(0deg, #e1cddd, #d3a9ca);
   }
 }
 
@@ -637,4 +710,17 @@ footer p {
   color: white;
   margin-bottom: 0;
   padding-right: 0.5rem;
+}
+
+/*Proximamente*/
+.soon-page {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soon-page h1 {
+  font-family: "Hatton";
+  color: $colour-dark-blue;
+  font-size: 3rem;
 }

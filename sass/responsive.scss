@@ -1,4 +1,135 @@
 @import "variables";
 
 @media screen and (max-width: 320px) {
+  /*navbar*/
+  .navbar {
+    padding: 0.5rem 0.5rem;
+  }
+  /*Home*/
+  .container-text-home {
+    top: 3rem;
+  }
+  .container-text-home h1 {
+    font-size: 2rem;
+  }
+  /*Sobre mi*/
+  .img-01,
+  .img-02 {
+    width: 18rem;
+    height: 24rem;
+    margin: 2rem 0 2rem 0.7rem;
+  }
+  .bg-sobre-mi {
+    padding-bottom: 4rem;
+  }
+  .accordion-button {
+    width: 60%;
+  }
+  /*Separador fotos*/
+  .row-img-01,
+  .row-img-02,
+  .row-img-03,
+  .row-img-04 {
+    height: 15rem;
+  }
+  /*Form*/
+  .box-form h1 {
+    font-size: 1.6rem;
+  }
+  .btn-send {
+    width: auto;
+  }
+
+  /**/
+  .box-text-prog h1 {
+    font-size: 2.4rem;
+  }
+  /*Emprendimientos*/
+  .contenedor-tarjetas-padre {
+    height: 170vh;
+  }
+  .bg-initiatives h1 {
+    font-size: 2rem;
+  }
+  .tarjeta {
+    width: auto;
+    height: 407px;
+  }
+  /*Mis redes*/
+  .rrss {
+    padding: 6rem 0;
+  }
+  /*footer*/
+  .bg-footer {
+    padding: 3.5rem 1rem;
+  }
+  .wrapper-footer {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Sobre mi*/
+  .box-text-home {
+    padding-left: 2rem;
+  }
+  .box-text-home-2 {
+    text-align: center;
+  }
+  /*Emprendimientos*/
+  .contenedor-tarjetas {
+    height: auto;
+  }
+  .tarjeta {
+    margin-bottom: 2rem;
+  }
+  .tarjeta-encabezado h1 {
+    font-size: 1rem;
+  }
+  /*Mi contenido*/
+  .box-1,
+  .box-2 {
+    align-items: center;
+    padding: 0;
+  }
+  .rrss a {
+    margin-right: 0;
+  }
+  /*Footer*/
+  .bg-footer,
+  .wrapper-footer {
+    flex-direction: column;
+  }
+  .logo-footer {
+    width: 12rem;
+    margin-right: 0;
+  }
+  .link-footer {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  footer p {
+    padding-right: 0;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-rrss a {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tarjeta {
+    &:hover {
+      height: 520px;
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+@media screen and (max-width: 1278px) {
+  /*Sobre mi*/
+  .img-02 {
+    margin-top: 38px;
+  }
 }

@@ -160,12 +160,12 @@ body {
 }
 
 .carousel-inner {
-  height: 31rem;
+  height: 38rem;
 }
 
 .container-text-home {
   position: absolute;
-  top: 6rem;
+  top: 10rem;
   padding-left: 3rem;
 }
 

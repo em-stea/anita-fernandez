@@ -32,6 +32,7 @@
   }
   .carousel-inner {
     height: auto;
+    margin-top: 5rem;
   }
   /*Sobre mi*/
   .img-01,
@@ -132,6 +133,7 @@
   }
   .carousel-inner {
     height: auto;
+    margin-top: 5rem;
   }
   /*Sobre mi*/
   .img-01,
@@ -232,6 +234,7 @@
   }
   .carousel-inner {
     height: auto;
+    margin-top: 5rem;
   }
   /*Sobre mi*/
   .img-01,
@@ -334,6 +337,7 @@
   }
   .carousel-inner {
     height: auto;
+    margin-top: 5rem;
   }
   /*Sobre mi*/
   .img-01,
@@ -436,6 +440,7 @@
   }
   .carousel-inner {
     height: auto;
+    margin-top: 5rem;
   }
   /*Sobre mi*/
   .img-01,
@@ -566,6 +571,30 @@
       width: auto;
       border-radius: 5px;
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .row-img-01 {
+    &:hover {
+      background-image: url(../img/row-img-01-hvr.jpg);
+      transition: all 0.5s ease-out;
+    }
+  }
+  .row-img-02 {
+    &:hover {
+      background-image: url(../img/row-img-02-hvr.jpg);
+      transition: all 0.5s ease-out;
+    }
+  }
+  .row-img-03 {
+    &:hover {
+      background-image: url(../img/row-img-03-hvr.jpg);
+      transition: all 0.5s ease-out;
+    }
+  }
+  .row-img-04 {
+    &:hover {
+      background-image: url(../img/row-img-04-hvr.jpg);
+      transition: all 0.5s ease-out;
     }
   }
 }

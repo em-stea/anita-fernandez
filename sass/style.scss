@@ -261,34 +261,18 @@ body {
 .row-img-01 {
   background-image: url(../img/row-img-01.jpg);
   @extend %module-img-row;
-  &:hover {
-    background-image: url(../img/row-img-01-hvr.jpg);
-    transition: all 0.5s ease-out;
-  }
 }
 .row-img-02 {
   background-image: url(../img/row-img-02.jpg);
   @extend %module-img-row;
-  &:hover {
-    background-image: url(../img/row-img-02-hvr.jpg);
-    transition: all 0.5s ease-out;
-  }
 }
 .row-img-03 {
   background-image: url(../img/row-img-03.jpg);
   @extend %module-img-row;
-  &:hover {
-    background-image: url(../img/row-img-03-hvr.jpg);
-    transition: all 0.5s ease-out;
-  }
 }
 .row-img-04 {
   background-image: url(../img/row-img-04.jpg);
   @extend %module-img-row;
-  &:hover {
-    background-image: url(../img/row-img-04-hvr.jpg);
-    transition: all 0.5s ease-out;
-  }
 }
 
 /*formulario*/

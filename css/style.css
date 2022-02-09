@@ -310,40 +310,16 @@ body {
   background-image: url(../img/row-img-01.jpg);
 }
 
-.row-img-01:hover {
-  background-image: url(../img/row-img-01-hvr.jpg);
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
 .row-img-02 {
   background-image: url(../img/row-img-02.jpg);
-}
-
-.row-img-02:hover {
-  background-image: url(../img/row-img-02-hvr.jpg);
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 
 .row-img-03 {
   background-image: url(../img/row-img-03.jpg);
 }
 
-.row-img-03:hover {
-  background-image: url(../img/row-img-03-hvr.jpg);
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
 .row-img-04 {
   background-image: url(../img/row-img-04.jpg);
-}
-
-.row-img-04:hover {
-  background-image: url(../img/row-img-04-hvr.jpg);
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 
 /*formulario*/

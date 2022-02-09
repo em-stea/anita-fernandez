@@ -46,7 +46,7 @@
   }
   /*Emprendimientos*/
   .contenedor-tarjetas-padre {
-    height: 170vh;
+    height: auto;
   }
   .bg-initiatives h1 {
     font-size: 2rem;
@@ -56,7 +56,7 @@
     height: 407px;
   }
   .tarjeta-encabezado h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   /*Mi contenido*/
   .box-contenido h1 {
@@ -129,7 +129,7 @@
   }
   /*Emprendimientos*/
   .contenedor-tarjetas-padre {
-    height: 178vh;
+    height: auto;
   }
   .bg-initiatives h1 {
     font-size: 2rem;
@@ -139,7 +139,7 @@
     height: 439px;
   }
   .tarjeta-encabezado h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   /*Mi contenido*/
   .box-contenido h1 {
@@ -212,7 +212,7 @@
   }
   /*Emprendimientos*/
   .contenedor-tarjetas-padre {
-    height: 178vh;
+    height: auto;
   }
   .bg-initiatives h1 {
     font-size: 2.5rem;
@@ -295,7 +295,7 @@
   }
   /*Emprendimientos*/
   .contenedor-tarjetas-padre {
-    height: 178vh;
+    height: auto;
   }
   .bg-initiatives h1 {
     font-size: 2.5rem;
@@ -378,7 +378,7 @@
   }
   /*Emprendimientos*/
   .contenedor-tarjetas-padre {
-    height: 178vh;
+    height: auto;
   }
   .bg-initiatives h1 {
     font-size: 2.5rem;

@@ -521,11 +521,12 @@ body {
 .botones {
   border-radius: 50px;
   padding: 0.3rem 2rem;
+  border: none;
   margin-top: 1rem;
-  border: 1px solid $colour-dark-blue;
   &:hover {
     background-color: $colour-dark-blue;
     color: white;
+    border: none;
   }
 }
 .col-md-2 {

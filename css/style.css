@@ -611,13 +611,14 @@ body {
 .botones {
   border-radius: 50px;
   padding: 0.3rem 2rem;
+  border: none;
   margin-top: 1rem;
-  border: 1px solid #2e1f74;
 }
 
 .botones:hover {
   background-color: #2e1f74;
   color: white;
+  border: none;
 }
 
 .col-md-2 {

@@ -324,6 +324,89 @@
   }
 }
 
+@media screen and (min-width: 661px) and (max-width: 770px) {
+  /*navbar*/
+  .navbar {
+    padding: 0.5rem 0.5rem;
+  }
+  /*Home*/
+  .container-text-home {
+    top: 3rem;
+  }
+  .container-text-home h1 {
+    font-size: 2rem;
+  }
+  .container-text-home h2 {
+    font-size: 1.5rem;
+  }
+  /*Sobre mi*/
+  .img-01,
+  .img-02 {
+    width: 35rem;
+    height: 40rem;
+    margin: 2rem 0 4rem 0.7rem;
+  }
+  .bg-sobre-mi {
+    padding-bottom: 4rem;
+  }
+  .box-text-home p {
+    width: 90%;
+  }
+  .box-text-home-2 h3 {
+    font-size: 2.7rem;
+  }
+  .accordion-button {
+    width: 60%;
+  }
+  /*Separador fotos*/
+  .row-img-01,
+  .row-img-02,
+  .row-img-03,
+  .row-img-04 {
+    height: 20rem;
+  }
+  /*Form*/
+  .box-form h1 {
+    font-size: 2rem;
+  }
+  .btn-send {
+    width: auto;
+  }
+  /**/
+  .box-text-prog h1 {
+    font-size: 2.5rem;
+  }
+  /*Emprendimientos*/
+  .contenedor-tarjetas-padre {
+    height: 178vh;
+  }
+  .bg-initiatives h1 {
+    font-size: 2.5rem;
+  }
+  .tarjeta {
+    width: auto;
+    height: 439px;
+  }
+  .tarjeta-encabezado h1 {
+    font-size: 2rem;
+  }
+  /*Mi contenido*/
+  .box-contenido h1 {
+    font-size: 2.1rem;
+  }
+  /*Mis redes*/
+  .rrss {
+    padding: 6rem 0;
+  }
+  /*footer*/
+  .bg-footer {
+    padding: 3.5rem 1rem;
+  }
+  .wrapper-footer {
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /*Sobre mi*/
   .box-text-home {

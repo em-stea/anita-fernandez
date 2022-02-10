@@ -47,7 +47,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  //overflow-x: hidden;
+  overflow-x: hidden;
 }
 body {
   font-size: 19px;
@@ -356,16 +356,19 @@ body {
 .box-text-prog p {
   margin-bottom: 3rem;
 }
-.box-text-prog a {
-  color: white;
-  text-decoration: none;
+.contactame {
   border: 1px solid white;
+  padding: 1rem;
   border-radius: 50px;
-  padding: 1rem 3rem;
-  width: 30%;
+  width: 15%;
+  margin: auto;
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
   }
+}
+.box-text-prog a {
+  color: white;
+  text-decoration: none;
 }
 
 /*Iniciativas y Emprendimientos*/
@@ -470,6 +473,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 90vh;
+  padding: 2rem 0;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 .contenedor-tarjetas {
   width: auto;
@@ -615,9 +622,8 @@ body {
   background: linear-gradient(135deg, #c850c0, #7685d3);
   box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  padding: 3rem;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

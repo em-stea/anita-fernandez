@@ -238,9 +238,9 @@
   /*Sobre mi*/
   .img-01,
   .img-02 {
-    width: 21.5rem;
+    width: 68%;
     height: 29rem;
-    margin: 2rem 0 4rem 4rem;
+    margin: 2rem 0 4rem 5rem;
   }
   .bg-sobre-mi {
     padding-bottom: 4rem;

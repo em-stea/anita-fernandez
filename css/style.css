@@ -567,7 +567,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 35rem;
+  height: 36.5rem;
 }
 
 .tarjeta {
@@ -575,7 +575,7 @@ body {
   width: auto;
   overflow: hidden;
   margin: auto;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 2%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;

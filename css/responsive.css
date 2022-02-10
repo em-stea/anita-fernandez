@@ -80,6 +80,9 @@
     width: auto;
     height: 407px;
   }
+  .tarjeta-1 {
+    margin-top: 6.5rem;
+  }
   .tarjeta-encabezado h1 {
     font-size: 0.8rem;
   }
@@ -188,6 +191,9 @@
     width: auto;
     height: 439px;
   }
+  .tarjeta-1 {
+    margin-top: 6.5rem;
+  }
   .tarjeta-encabezado h1 {
     font-size: 1.2rem;
   }
@@ -291,6 +297,9 @@
   .tarjeta {
     width: auto;
     height: 439px;
+  }
+  .tarjeta-1 {
+    margin-top: 6.5rem;
   }
   .tarjeta-encabezado h1 {
     font-size: 1.1rem;
@@ -397,6 +406,9 @@
   .tarjeta {
     width: auto;
     height: 439px;
+  }
+  .tarjeta-1 {
+    margin-top: 6.5rem;
   }
   .tarjeta-encabezado h1 {
     font-size: 1.2rem;

@@ -1,5 +1,14 @@
 @import "variables";
 
+@media screen and (max-width: 989px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
 @media screen and (max-width: 320px) {
   /*navbar*/
   .navbar {
